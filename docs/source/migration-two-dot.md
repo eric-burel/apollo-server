@@ -294,11 +294,7 @@ const server = new ApolloServer({
   // These will be defined for both new or existing servers
   typeDefs,
   resolvers,
-});
-
-server.applyMiddleware({
-  app, // app is from an existing express app
-  gui: {
+  playground: {
     endpoint?: string
     subscriptionEndpoint?: string
     tabs: [
